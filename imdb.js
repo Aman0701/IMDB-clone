@@ -230,7 +230,7 @@ function displayData(data, div) {
                 searchResult.style.display = 'none';
                 if (div == displayresult && inputData != null && inputData != "" && inputData != undefined) {
                     const h1 = document.createElement('h1');
-                    h1.innerText = `showing results for "${document.getElementById('input').value}"`
+                    h1.innerText = `Showing results for "${document.getElementById('input').value}"`
                     div.appendChild(h1);
                 }
                 document.getElementById('input').value = "";
