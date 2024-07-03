@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Define character encoding and viewport settings -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the page -->
+    <title>Search Movie</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="imdb.css">
+</head>
+<body onload="firstPage()">
+    <!-- Navigation bar container -->
+    <div id="nav-bar">
+        <!-- Logo and title container -->
+        <div id="logo">
+            <!-- Logo image -->
+            <img src="qsawjucs5rs61.jpg">
+            <!-- Title text -->
+            <h2>Search Movie</h2>
+        </div>
+        <!-- Search input field -->
+        <input type="text" id="input" placeholder="Search any Movie..." onkeyup="searchMovies()">
+        <!-- Search button with magnifying glass icon -->
+        <button id="search"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+        <!-- Link to favourite page -->
+        <a href="fav.html">favourite</a>
+    </div>
+    <!-- Container for search results -->
+    <div id="search-result">
+       
+    </div>
+    <!-- Container for displaying movie details -->
+    <div id="display-result">
+       
+    </div>
+    <!-- Font Awesome script for icons -->
+    <script src="https://kit.fontawesome.com/8ec9d4b7e0.js" crossorigin="anonymous"></script>
+    <!-- External JavaScript file for IMDb functionality -->
+    <script src="imdb.js"></script>
+</body>
+</html>
