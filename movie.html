@@ -1,0 +1,55 @@
+<!-- Document type declaration -->
+<!DOCTYPE html>
+
+<!-- HTML element, lang attribute specifies the language of the document -->
+<html lang="en">
+
+<!-- Head section, contains metadata about the document -->
+<head>
+    <!-- Character encoding declaration -->
+    <meta charset="UTF-8">
+    
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page, displayed in the browser's title bar -->
+    <title>Movie Detail</title>
+    
+    <!-- Link to an external stylesheet, imdb.css -->
+    <link rel="stylesheet" type="text/css" href="imdb.css">
+</head>
+
+<!-- Body section, contains the content of the HTML document -->
+<body onload="movieDiv()">
+    
+    <!-- Navigation bar container -->
+    <div id="nav-bar">
+        <!-- Logo container -->
+        <div id="logo">
+            <!-- Image element, displays the logo image -->
+            <img src="qsawjucs5rs61.jpg">
+            <!-- Heading element, displays the logo text -->
+            <h2>Search Movie</h2>
+        </div>
+        
+        <!-- Text input field for searching movies -->
+        <input type="text" id="input" placeholder="Search any Movie..." onkeyup="searchMovies()">
+        
+        <!-- Search button, uses Font Awesome icon -->
+        <button id="search"><i class="fa-solid fa-magnifying-glass fa-2x"></i></button>
+        
+        <!-- Link to the home page -->
+        <a href="index.html">Home</a>
+    </div>
+    
+    <!-- Container for movie details, will be populated dynamically -->
+    <div id="movie-detail">
+    </div>
+    
+    <!-- Script tag, loads Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/8ec9d4b7e0.js" crossorigin="anonymous"></script>
+    
+    <!-- Script tag, loads the imdb.js script -->
+    <script src="imdb.js"></script>
+</body>
+</html>
