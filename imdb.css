@@ -1,0 +1,252 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Navigation bar styles */
+  #nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 20vh;
+    box-shadow: 1px 1px 10px 1px #4b2a2a;
+    border-radius: 2px solid rgb(236, 233, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 5;
+  }
+  
+  /* Remove outline on input focus */
+  input:focus {
+    outline: none;
+  }
+  
+  /* Navigation bar link styles */
+  #nav-bar a {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* Logo styles */
+  #logo img {
+    width: 5%;
+    height: 40%;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 3%;
+  }
+  
+  #logo h2 {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  /* Search input styles */
+  #input {
+    width: 50%;
+    height: 30%;
+    border: 1px solid #1e1e1e;
+    border-radius: 15px 0 0 15px;
+    background-color: transparent;
+    font-size: 1.3rem;
+    color: white;
+    padding-left: 20px;
+    z-index: 1;
+  }
+  
+  /* Search button styles */
+  #search {
+    color: white;
+    width: 5%;
+    height: 32.5%;
+    border: 1px solid #1e1e1e;
+    border-radius: 0 12px 12px 0;
+    background-color: #222222;
+  }
+  
+  /* Search result styles */
+  #search-result {
+    position: fixed;
+    top: 14%;
+    left: 23%;
+    width: 50%;
+    border-radius: 10px;
+    z-index: 10;
+    max-height: 600px;
+    overflow: scroll;
+    background-color: #38363a;
+  }
+  
+  #search-result > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid grey;
+  }
+  
+  #search-result img {
+    width: 100px;
+    height: 80px;
+  }
+  
+  .search-info {
+    display: flex;
+  }
+  
+  .search-detail {
+    display: block;
+    justify-content: center;
+  }
+  
+  /* Display result styles */
+  #display-result {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: scroll;
+    color: white;
+    margin-top: 10%;
+    justify-content: space-around;
+    width: 70%;
+  }
+  
+  #search-result::-webkit-scrollbar,
+  #display-result::-webkit-scrollbar {
+    display: none;
+  }
+  
+  #display-result > div {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30%;
+    background-color: rgb(27, 25, 25);
+    margin-bottom: 50px;
+    height: 50vh;
+    box-shadow: 1px 1px 5px 1px;
+  }
+  
+  .display-info {
+    height: 80%;
+    width: 90%;
+  }
+  
+  .display-info img {
+    width: 100%;
+    height: 80%;
+  }
+  
+  .checked {
+    color: red;
+  }
+  
+  .display-detail {
+    width: 90%;
+    display: block;
+    justify-content: space-between;
+  }
+  
+  #display-result i {
+    position: absolute;
+    left: 85%;
+    top: 75%;
+  }
+  
+  #display-result h1 {
+    width: 100%;
+    align-items: center;
+    /* margin-left: 40%; */
+  }
+  
+  /* Favorite styles */
+  #fav {
+    margin-top: 15%;
+    color: white;
+    width: 60%;
+    display: block;
+  }
+  
+  #fav > div {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 5%;
+    background-color: #1e1e1e;
+    height: 30vh;
+    box-shadow: 1px 1px 5px 1px;
+    font-size: 1.5rem;
+  }
+  
+  #fav > div i {
+    position: absolute;
+    left: 98%;
+  }
+  
+  #fav > div img {
+    width: 30%;
+    height: 30vh;
+  }
+  
+  /* Movie detail styles */
+  #movie-detail {
+    width: 55%;
+    height: auto;
+    margin-top: 12%;
+    color: white;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    box-shadow: 2px 2px 10px 2px;
+  }
+  
+  #movie-detail > div {
+    display: flex;
+    flex-wrap: wrap;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+  }
+  
+  #movie-detail > div img {
+    width: 45%;
+    height: 70%;
+  }
+  
+  #movie-detail i {
+    position: absolute;
+    left: 95%;
+  }
+  
+  .absolute {
+    position: absolute;
+    left: 70%;
+    top: 86%;
+    width: 60%;
+  }
+  
+  .hidden {
+    display: none;
+  }
