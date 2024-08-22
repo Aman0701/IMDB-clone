@@ -289,9 +289,10 @@ async function favDiv() {
         }
         let id = localStorage.getItem(i);
 
+        
         if (id != null) {
             const data = await getImdbDetail(id);
-            if (data.Response) {
+            if (data.Response == 'True') {
                 console.log(data);
                 const innerDiv = document.createElement('div');
                 const detail = document.createElement('div');
